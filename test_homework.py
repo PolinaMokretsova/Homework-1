@@ -21,6 +21,6 @@ def test_text():
 #негативный тест на поиск, чтобы он не выдавал результатов
 
 def test_text_negative():
-   browser.element('[id="links_wrapper"]').should(have.text('Apple'))
+   browser.element('[id="links_wrapper"]').should(have.no.text('Apple'))
 
 
